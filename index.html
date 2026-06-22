@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>УкрНовини</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="#" class="logo">УкрНовини</a>
+      <button class="burger" id="burgerBtn" aria-label="Меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav" id="mainNav">
+        <a href="#">Головна</a>
+        <a href="#">Україна</a>
+        <a href="#">Світ</a>
+        <a href="#">Економіка</a>
+        <a href="#">Спорт</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- BANNER IMAGE -->
+  <section class="banner">
+    <img src="img/banner.jpg" alt="Новина дня" />
+    <div class="banner-caption">
+      <span class="banner-tag">Новина дня</span>
+      <h1>Важлива подія, яка змінила хід цього тижня</h1>
+    </div>
+  </section>
+
+  <!-- MAIN LAYOUT: content + sidebar -->
+  <div class="layout">
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+      <!-- Актуальні події -->
+      <section class="section">
+        <h2 class="section-title">Актуальні події</h2>
+        <div class="cards">
+
+          <article class="news-card">
+           <img src="img/news1.jpg" alt="Новина 1" />
+            <div class="card-body">
+              <span class="card-tag">Україна</span>
+              <h3>Парламент ухвалив новий законопроєкт про енергетику</h3>
+              <p>Верховна Рада підтримала законопроєкт, що регулює відновлювані джерела енергії.</p>
+              <a href="#" class="card-link">Читати далі →</a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <img src="img/news2.jpg" alt="Новина 2" />
+            <div class="card-body">
+              <span class="card-tag">Світ</span>
+              <h3>Міжнародний саміт: лідери домовились про нові угоди</h3>
+              <p>На зустрічі у Брюсселі підписано ряд важливих двосторонніх угод між країнами.</p>
+              <a href="#" class="card-link">Читати далі →</a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <img src="img/news3.jpg" alt="Новина 3" />
+            <div class="card-body">
+              <span class="card-tag">Економіка</span>
+              <h3>Курс гривні стабілізувався після тижня коливань</h3>
+              <p>Національний банк оголосив про заходи підтримки національної валюти.</p>
+              <a href="#" class="card-link">Читати далі →</a>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Список новин -->
+      <section class="section">
+        <h2 class="section-title">Інші новини</h2>
+        <ul class="news-list">
+          <li><a href="#">Рекордна кількість туристів відвідала Карпати цього літа</a> <span>22 червня</span></li>
+          <li><a href="#">Уряд затвердив програму підтримки малого бізнесу</a> <span>21 червня</span></li>
+          <li><a href="#">Збірна України здобула перемогу у відборі до чемпіонату</a> <span>20 червня</span></li>
+          <li><a href="#">Нові маршрути: авіакомпанії розширюють сполучення</a> <span>19 червня</span></li>
+          <li><a href="#">Науковці представили розробку у галузі медицини</a> <span>18 червня</span></li>
+        </ul>
+      </section>
+
+    </main>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <h2 class="section-title">Корисні посилання</h2>
+      <ul class="sidebar-links">
+        <li><a href="#">🔗 Офіційний сайт Президента</a></li>
+        <li><a href="#">🔗 Верховна Рада України</a></li>
+        <li><a href="#">🔗 Кабінет Міністрів</a></li>
+        <li><a href="#">🔗 Міністерство фінансів</a></li>
+        <li><a href="#">🔗 Укрінформ</a></li>
+        <li><a href="#">🔗 Суспільне мовлення</a></li>
+      </ul>
+
+      <div class="sidebar-widget">
+        <h3>Погода у Києві</h3>
+        <p>☀️ +24°C, сонячно</p>
+        <p>Вітер: 3 м/с, вологість: 55%</p>
+      </div>
+    </aside>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 УкрНовини. Усі права захищено.</p>
+    <p>Виконав: {Твоє Прізвище І.О.} &nbsp;|&nbsp; Варіант: {Номер твого варіанту}</p>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('burgerBtn');
+    const nav = document.getElementById('mainNav');
+    btn.addEventListener('click', function () {
+      nav.classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>
